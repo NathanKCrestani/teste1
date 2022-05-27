@@ -1,0 +1,2 @@
+class Ginasio < ApplicationRecord
+end

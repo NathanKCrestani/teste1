@@ -1,0 +1,2 @@
+class Zica < ApplicationRecord
+end

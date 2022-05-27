@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Ginasios</h1>
+
+<div id="ginasios">
+  <% @ginasios.each do |ginasio| %>
+    <%= render ginasio %>
+    <p>
+      <%= link_to "Show this ginasio", ginasio %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New ginasio", new_ginasio_path %>

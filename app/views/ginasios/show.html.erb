@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @ginasio %>
+
+<div>
+  <%= link_to "Edit this ginasio", edit_ginasio_path(@ginasio) %> |
+  <%= link_to "Back to ginasios", ginasios_path %>
+
+  <%= button_to "Destroy this ginasio", @ginasio, method: :delete %>
+</div>

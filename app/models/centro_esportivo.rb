@@ -1,0 +1,2 @@
+class CentroEsportivo < ApplicationRecord
+end

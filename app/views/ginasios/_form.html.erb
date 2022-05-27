@@ -1,0 +1,47 @@
+<%= form_with(model: ginasio) do |form| %>
+  <% if ginasio.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(ginasio.errors.count, "error") %> prohibited this ginasio from being saved:</h2>
+
+      <ul>
+        <% ginasio.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :nome, style: "display: block" %>
+    <%= form.text_field :nome %>
+  </div>
+
+  <div>
+    <%= form.label :rua, style: "display: block" %>
+    <%= form.text_field :rua %>
+  </div>
+
+  <div>
+    <%= form.label :bairro, style: "display: block" %>
+    <%= form.text_field :bairro %>
+  </div>
+
+  <div>
+    <%= form.label :numero, style: "display: block" %>
+    <%= form.text_field :numero %>
+  </div>
+
+  <div>
+    <%= form.label :responsavel, style: "display: block" %>
+    <%= form.text_field :responsavel %>
+  </div>
+
+  <div>
+    <%= form.label :telefone, style: "display: block" %>
+    <%= form.text_field :telefone %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
